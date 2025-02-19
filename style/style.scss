@@ -91,7 +91,7 @@ body {
         li{
             font-size: 0.4rem;
             img {
-                width: 35%;  // Example: make any image inside search-box full-width
+                width: 35%;  
               }
 
         }
@@ -117,7 +117,7 @@ body {
         border-radius: 0; 
 
         &.active {
-            border-radius: 20px !important; // Make only the active button rounded
+            border-radius: 20px !important; 
         }
     }
 }
@@ -149,7 +149,7 @@ body {
         li{
             font-size: 0.3rem;
             img {
-                width: 15%;  // Example: make any image inside search-box full-width
+                width: 15%;  
               }
     
         }
