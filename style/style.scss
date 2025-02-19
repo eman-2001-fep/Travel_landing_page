@@ -191,7 +191,7 @@ body {
                 transform: none;
                 top: auto;
                 right: auto;
-                margin-top: -30px; /* Slight overlap with image */
+                margin-top: -30px; 
             }
 
             @media (max-width: 480px) {
@@ -250,6 +250,31 @@ body {
 }
 
 
+
+// Footer
+.footer {
+    background: $primary-bg;
+    padding: 2rem 0;
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 40%;
+            max-width: 40%;
+            margin-right: 10px;
+        }
+    }
+
+    .social-icons {
+        a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: $black;
+        }
+    }
+}
 
 
 
