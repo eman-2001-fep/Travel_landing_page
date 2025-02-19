@@ -1,1 +1,181 @@
+
+$font-sizes: (
+  "xs": 0.6rem, 
+  "sm": 0.875rem,
+  "md": 1rem,
+  "lg": 1.25rem,
+  "xl": 1.5rem,
+  "xxl": 2rem,
+  "xxxl": 3rem 
+);
+$primary-bg: #F4F3FE;
+$white: #ffffff;
+$black: #000;
+$border-radius: 12px;
+$primary: #0D7EFF;
+$secondary: #828282;
+$success:#4F4F4F;
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #C7C7C7;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+/* Main Image */
+.main-img {
+    margin-left: -62px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    max-width: 150% !important;
+    @media (max-width: 768px) {
+        width: 100%;  
+        left: 27px;  
+
+    }
+    @media (max-width: 480px) {
+        width: 97%;  
+        left: 20px;  
+    }
+
+}
+/* Overlay Image (Background) */
+.overlay-img {
+    position: absolute;
+    top: -14px;
+    left: 18px;
+    width: 96%;
+    z-index: 1;  
+}
+.subtract-img {
+    position: absolute;
+    width: 90%;
+    max-width: 120% !important;
+    bottom: 7px;
+    left: 24px;
+    z-index: 3;
+  
+    @media (max-width: 768px) {
+        display: none;
+
+    }
+    
+
+}
+.search-box {
+    position: absolute;
+    bottom: 20%;
+    right: 38%;
+    width: 30%;
+    z-index: 4;
+
+    li{
+        font-size: 0.6rem;
+        img {
+            width: 35%;  // Example: make any image inside search-box full-width
+          }
+
+    }
+  
+    @media (max-width: 768px) {
+        display: none;
+        left: 27px;
+        width: 34%;
+        left: 32%;
+        padding: 0;
+    
+        li{
+            font-size: 0.4rem;
+            img {
+                width: 35%;  // Example: make any image inside search-box full-width
+              }
+
+        }
+
+    }
+    @media (max-width: 480px) {
+        width: 64%;
+        left: 17%;
+        padding: 0;
+        li{
+            font-size: 0.4rem;
+            img {
+                width: 30%;  
+              }
+
+        }
+        
+    }
+}
+
+.nav-pills {
+    .nav-link {
+        border-radius: 0; 
+
+        &.active {
+            border-radius: 20px !important; // Make only the active button rounded
+        }
+    }
+}
+.tab-content {
+   left: 4%;
+    position: absolute;
+    bottom: 4px;
+    width: 89%;
+    z-index: 5;
+    font-size: .9rem;
+    img {
+        width: 18%;  
+      }
+
+    
+      @media (max-width: 768px) {
+        width: 43%;
+        left: 63%; 
+        img {
+            width: 5%;  
+          }
+    
+
+    }
+    @media (max-width: 480px) {
+        width: 36%;
+        left: 31%;
+        bottom: -46px;
+        li{
+            font-size: 0.3rem;
+            img {
+                width: 15%;  // Example: make any image inside search-box full-width
+              }
+    
+        }
+        
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
