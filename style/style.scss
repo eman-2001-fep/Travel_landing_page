@@ -228,6 +228,27 @@ body {
     }
 }
 
+.faq{
+    background-color: $primary-bg !important;
+
+    .accordion {
+        background-color: $primary-bg !important;
+        .accordion-item {
+            border: none;
+            border-radius: $border-radius;
+            margin-bottom: 0.5rem;
+        }
+    
+        .accordion-button {
+            background: $white !important; 
+            font-weight: 600;
+            box-shadow: none !important;
+    
+        
+        }
+    }
+}
+
 
 
 
