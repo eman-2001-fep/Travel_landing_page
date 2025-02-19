@@ -158,6 +158,49 @@ body {
    
 }
 
+.travel-packages {
+    background-color: #333333;
+    .image-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .mountain-img {
+            width: 100%;
+            display: block;
+        }
+
+        .package-card {
+            position: absolute;
+            top: 50%;
+            right: 4px;
+            width: 50%;
+            height: fit-content;
+            transform: translateY(-50%);
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+
+           
+            @media (max-width: 768px) {
+                position: relative;
+                width: 90%;
+                transform: none;
+                top: auto;
+                right: auto;
+                margin-top: -30px; /* Slight overlap with image */
+            }
+
+            @media (max-width: 480px) {
+                width: 97%;
+                margin-top: -20px;
+            }
+        }
+    }
+}
 
 
 
